@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./base.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakout.js</title>
+        
+    </head>
+    <body>
+      <dialog id="welcome">
+            <h1>Breakout.js</h1>
+            <p>If on mobile please turn your phone Landscape.</p>
+            <p>Controls: If on keyboard arrow keys in on mobile just swipe for the joystick to appear</p>
+            <button onclick="location.href='./Game.html'">Play</button>
+
+      </dialog>
+      <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            welcome.showModal();
+        })
+      </script>
+      <style>
+        body {
+            background: url(./breakout.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        #welcome {
+            text-align: center;
+            padding: 30px;
+        }
+        #welcome button {
+            padding: 10px 15px;
+            background-color: red;
+            color: white;
+        }
+      </style>
+    </body>
+</html> 

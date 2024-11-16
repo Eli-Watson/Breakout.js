@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="./base.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <title>Breakout.js</title>
+         <script src="https://cdn.jsdelivr.net/npm/nipplejs@0.10.0/dist/nipplejs.min.js"></script>
+    </head>
+    <body>
+        <div id="joystick-zone">
+            <div class="game">
+                <h1 id="score">0</h1>
+                <div class="grid"></div>
+            </div>
+       </div>
+       <script src="./app.js"></script> 
+       <dialog id="gameover" class="end">
+            <h1>You lose...</h1>
+            <button onclick="location.reload();">Restart</button>
+            <!-- <p>your score was:</p>
+            <div id="finalscore"></div> -->
+       </dialog>
+       <dialog id="win" class="end">
+            <h1>You Win!</h1>
+            <button onclick="location.reload();">Replay</button>
+       </dialog>
+    </body>
+</html> 
