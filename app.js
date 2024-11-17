@@ -138,7 +138,7 @@ function joyControl() {
         moveUserL();
         break;
     }
-  }, 50)
+  }, 40)
   }
   
 joyControl();
@@ -162,7 +162,7 @@ function moveBall() {
     drawBall()
     checkForCollisions()
 }
-timerId = setInterval(moveBall, 30)
+timerId = setInterval(moveBall, 15)
 
 //check for collisions
 function checkForCollisions() {
